@@ -6,11 +6,10 @@
 //  Copyright © 2016 Andre Alves. All rights reserved.
 //
 
-// DiffContext is the initial setup of the OA and NA arrays. It is than processed to create the diff steps.
-// By the end of `setupContext`, the context is the state showed at the figure 1 of the Paul Heckel's paper.
-
 import Foundation
 
+/// DiffContext is the initial setup of the OA and NA arrays. It is than processed to create the diff steps.
+/// By the end of `setupContext`, the context is the state showed at the figure 1 of the Paul Heckel's paper.
 public final class DiffContext<T: Diffable> {
     public private(set) var fromArray: [T] // O
     public private(set) var toArray: [T] // N
@@ -27,8 +26,6 @@ public final class DiffContext<T: Diffable> {
     }
 
     private func setupContext() {
-        // The context setup is made in 5 passes.
-
         // First pass
         for obj in toArray {
             let symbol = table[obj.diffIdentifier] ?? Reference.Symbol()

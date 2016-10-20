@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE71DA821DB7147300519D7C /* DiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71DA811DB7147300519D7C /* DiffResult.swift */; };
 		DEB4EC941DB3E63200FFA96B /* PHDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB4EC8A1DB3E63100FFA96B /* PHDiff.framework */; };
 		DEB4EC991DB3E63200FFA96B /* PHDiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4EC981DB3E63200FFA96B /* PHDiffTests.swift */; };
 		DEB4EC9B1DB3E63200FFA96B /* PHDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB4EC8D1DB3E63100FFA96B /* PHDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE71DA811DB7147300519D7C /* DiffResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffResult.swift; sourceTree = "<group>"; };
 		DEB4EC8A1DB3E63100FFA96B /* PHDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PHDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB4EC8D1DB3E63100FFA96B /* PHDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHDiff.h; sourceTree = "<group>"; };
 		DEB4EC8E1DB3E63100FFA96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				DEB4ECA61DB3E6D300FFA96B /* Diffable.swift */,
 				DEB4ECA71DB3E6D300FFA96B /* DiffContext.swift */,
 				DEB4ECA81DB3E6D300FFA96B /* DiffStep.swift */,
+				DE71DA811DB7147300519D7C /* DiffResult.swift */,
 				DEB4ECA91DB3E6D300FFA96B /* PHDiff.swift */,
 			);
 			path = Sources;
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB4ECAB1DB3E6D300FFA96B /* Diffable.swift in Sources */,
+				DE71DA821DB7147300519D7C /* DiffResult.swift in Sources */,
 				DEB4ECAC1DB3E6D300FFA96B /* DiffContext.swift in Sources */,
 				DEB4ECAE1DB3E6D300FFA96B /* PHDiff.swift in Sources */,
 				DEB4ECAD1DB3E6D300FFA96B /* DiffStep.swift in Sources */,

@@ -26,9 +26,9 @@ final class DemoTableViewController: UITableViewController {
     }
 
     private func updateTableView(newColors: [DemoColor]) {
-        let steps = PHDiff.steps(fromArray: self.colors, toArray: newColors)
+        let diffResult = PHDiff.diff(fromArray: self.colors, toArray: newColors)
 
-        if steps.count > 0 {
+        if diffResult.stepsCount > 0 {
             tableView.beginUpdates()
             self.colors = newColors // update your model here
 
@@ -36,7 +36,7 @@ final class DemoTableViewController: UITableViewController {
             var deletions: [IndexPath] = []
             var reloads: [IndexPath] = []
 
-            steps.forEach { step in
+            diffResult.steps.forEach { step in
                 switch step {
                 case let .insert(_, index):
                     insertions.append(IndexPath(row: index, section: 0))
