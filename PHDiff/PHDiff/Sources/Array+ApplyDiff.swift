@@ -9,6 +9,10 @@
 import Foundation
 
 extension Array where Element: Diffable {
+    public func apply(diffResult: DiffResult<Element>) -> [Element] {
+        return apply(steps: diffResult.applicableSteps)
+    }
+
     public func apply(steps: [DiffStep<Element>]) -> [Element] {
         var copy = self
 
